@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+body{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: linear(45deg,#856b77);
+}
+
+h1{
+    font-family: 'Lemon', serif;
+    font-size: 100px;
+    text-align: center;  
+    color:#f5d98c;
+    margin-top: 100px;
+}
+
+.b-text span{
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    display: inline-block;
+}
+
+.b-text span:hover{
+    color: antiquewhite;
+}
+
+.bounce{
+    animation-name: bounce;
+}
+
+@keyframes bounce{
+    20%,
+    50%,
+    80%,
+    to{
+        transform: scale(1.5,1.5);
+    }
+    40%{
+        transform: scale(1.75, 0.65);
+    }
+    45%{
+        transform: scale(1.75, 0.65);
+    }
+    70%{
+        transform: scale(1.25, 0.75);
+    }
+    90%{
+        transform: scale(1.15, 0.85);
+    }
+}
