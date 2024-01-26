@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    padding: 150 100px;
+}
+
+.day{
+    align-items: center;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.cube{
+    padding: 0;
+    margin-left: 300px;
+}
+
+button {
+    display: block;
+    font-size: 15px;
+    padding: 12px 40px;
+    border-radius: 2px;
+    border: 1px solid rgb(0, 0, 0);
+    width: 170px;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: all .2s ease-in-out; 
+    font-weight: 500;
+}
+
+button:hover{
+    transform: scale(1.1); 
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.monday{
+    background-color: rgb(189, 115, 189); 
+}
+
+.tuesday{
+    background-color: rgb(255, 242, 192); 
+}
+
+.wednesday{
+    background-color: rgb(105, 105, 143); 
+}
+
+.thursday{
+    background-color: rgb(171, 227, 171); 
+}
+
+.friday{
+    background-color: rgb(255, 221, 71); 
+}
+
+.saturday{
+    background-color: rgb(255, 183, 218); 
+}
+
+.sunday{
+    background-color: rgb(245, 97, 169); 
+}
+
+.mon-down{
+    position: absolute;
+    animation: mon-appear 2s ease-in-out;
+    animation-timing-function: linear;
+    top: 400px;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 5px solid rgb(189, 115, 189); 
+}
+
+.tue-down{
+    position: absolute;
+    animation: tue-appear 2s ease-in-out;
+    animation-timing-function: linear;
+    top: 400px;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 5px solid rgb(255, 242, 192); 
+}
+
+.wed-down{
+    position: absolute;
+    animation: wed-appear 2s ease-in-out;
+    animation-timing-function: linear;
+    top: 400px;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 5px solid rgb(105, 105, 143); 
+}
+
+.thu-down{
+    position: absolute;
+    animation: thu-appear 2s ease-in-out;
+    animation-timing-function: linear;
+    top: 400px;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 5px solid rgb(171, 227, 171); 
+}
+
+.fri-down{
+    position: absolute;
+    animation: fri-appear 2s ease-in-out;
+    animation-timing-function: linear;
+    top: 400px;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 5px solid rgb(255, 221, 71); 
+}
+
+.sat-down{
+    position: absolute;
+    animation: sat-appear 2s ease-in-out;
+    animation-timing-function: linear;
+    top: 400px;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 5px solid rgb(255, 183, 218); 
+}
+
+.sun-down{
+    position: absolute;
+    animation: sun-appear 2s ease-in-out;
+    animation-timing-function: linear;
+    top: 400px;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 5px solid rgb(245, 97, 169); 
+}
+
+.mon-up{
+    position: absolute;
+    animation: mon-hide 1s ease-in-out;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 5px solid rgb(189, 115, 189); 
+    top: -360px;
+}
+
+.tue-up{
+    position: absolute;
+    animation: tue-hide 2s ease-in-out;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 5px solid rgb(255, 242, 192); 
+    top: -360px;
+}
+
+.wed-up{
+    position: absolute;
+    animation: wed-hide 2s ease-in-out;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 5px solid rgb(105, 105, 143);
+    top: -360px;
+}
+
+.thu-up{
+    position: absolute;
+    animation: thu-hide 2s ease-in-out;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 5px solid rgb(171, 227, 171); 
+    top: -360px;
+}
+
+.fri-up{
+    position: absolute;
+    animation: fri-hide 2s ease-in-out;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 5px solid rgb(255, 221, 71); 
+    top: -360px;
+}
+
+.sat-up{
+    position: absolute;
+    animation: sat-hide 2s ease-in-out;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 5px solid rgb(255, 183, 218); 
+    top: -360px;
+}
+
+.sun-up{
+    position: absolute;
+    animation: sun-hide 2s ease-in-out;
+    animation-timing-function: linear;
+    height: 300px;
+    width: 300px;
+    background-color: transparent;
+    border: 5px solid rgb(245, 97, 169); 
+    top: -360px;
+}
+
+@keyframes mon-appear{
+    0%{
+        top: -360px;
+        background-color: rgb(189, 115, 189);
+    }
+    50%{
+        top: 80px;
+        background-color: rgb(189, 115, 189);
+        opacity: 50%;
+    }
+    100%{
+        top: 400px;
+        background-color: white;
+
+    }
+}
+@keyframes tue-appear{
+    0%{
+        top: -360px;
+        background-color: rgb(255, 242, 192);
+    }
+    50%{
+        top: 80px;
+        background-color: rgb(255, 242, 192);
+        opacity: 50%;
+    }
+    100%{
+        top: 400px;
+        background-color: white;
+
+    }
+}
+@keyframes wed-appear{
+    0%{
+        top: -360px;
+        background-color: rgb(105, 105, 143);
+    }
+    50%{
+        top: 80px;
+        background-color: rgb(105, 105, 143);
+        opacity: 50%;
+    }
+    100%{
+        top: 400px;
+        background-color: white;
+
+    }
+}
+@keyframes thu-appear{
+    0%{
+        top: -360px;
+        background-color: rgb(171, 227, 171);
+    }
+    50%{
+        top: 80px;
+        background-color: rgb(171, 227, 171);
+        opacity: 50%;
+    }
+    100%{
+        top: 400px;
+        background-color: white;
+
+    }
+}
+@keyframes fri-appear{
+    0%{
+        top: -360px;
+        background-color: rgb(255, 221, 71);
+    }
+    50%{
+        top: 80px;
+        background-color: rgb(255, 221, 71);
+        opacity: 50%;
+    }
+    100%{
+        top: 400px;
+        background-color: white;
+
+    }
+}
+@keyframes sat-appear{
+    0%{
+        top: -360px;
+        background-color: rgb(255, 183, 218);
+    }
+    50%{
+        top: 80px;
+        background-color: rgb(255, 183, 218);
+        opacity: 50%;
+    }
+    100%{
+        top: 400px;
+        background-color: white;
+
+    }
+}
+@keyframes sun-appear{
+    0%{
+        top: -360px;
+        background-color: rgb(245, 97, 169);
+    }
+    50%{
+        top: 80px;
+        background-color: rgb(245, 97, 169);
+        opacity: 50%;
+    }
+    100%{
+        top: 400px;
+        background-color: white;
+
+    }
+}
+@keyframes mon-hide {
+    0%{
+        top: 400px;
+        background-color: white;
+    }
+    50%{
+        bottom: 80px;
+        background-color: rgb(189, 115, 189);
+        opacity: 50%;
+    }
+    100%{
+        top: -360px;
+        background-color:rgb(189, 115, 189);
+    }
+  }
+  @keyframes tue-hide {
+    0%{
+        top: 400px;
+        background-color: white;
+    }
+    50%{
+        bottom: 80px;
+        background-color: rgb(255, 242, 192);
+        opacity: 50%;
+    }
+    100%{
+        top: -360px;
+        background-color: rgb(255, 242, 192);
+    }
+  }
+  @keyframes wed-hide {
+    0%{
+        top: 400px;
+        background-color: white;
+    }
+    50%{
+        bottom: 80px;
+        background-color: rgb(105, 105, 143);
+        opacity: 50%;
+    }
+    100%{
+        top: -360px;
+        background-color: rgb(105, 105, 143);
+    }
+  }
+  @keyframes thu-hide {
+    0%{
+        top: 400px;
+        background-color: white;
+    }
+    50%{
+        bottom: 80px;
+        background-color: rgb(171, 227, 171);
+        opacity: 50%;
+    }
+    100%{
+        top: -360px;
+        background-color: rgb(171, 227, 171);
+    }
+  }
+  @keyframes fri-hide {
+    0%{
+        top: 400px;
+        background-color: white;
+    }
+    50%{
+        bottom: 80px;
+        background-color: rgb(255, 221, 71);
+        opacity: 50%;
+    }
+    100%{
+        top: -360px;
+        background-color: rgb(255, 221, 71);
+    }
+  }
+  @keyframes sat-hide {
+    0%{
+        top: 400px;
+        background-color: white;
+    }
+    50%{
+        bottom: 80px;
+        background-color: rgb(255, 183, 218);
+        opacity: 50%;
+    }
+    100%{
+        top: -360px;
+        background-color: rgb(255, 183, 218);
+    }
+  }
+  @keyframes sun-hide {
+    0%{
+        top: 400px;
+        background-color: white;
+    }
+    50%{
+        bottom: 80px;
+        background-color: rgb(245, 97, 169);
+        opacity: 50%;
+    }
+    100%{
+        top: -360px;
+        background-color: rgb(245, 97, 169);
+    }
+  }
